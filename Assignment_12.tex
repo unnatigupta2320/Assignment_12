@@ -183,15 +183,17 @@ d.)&Pr$(X=1|Y=0)$ & $0.3$ \\
 \label{tab:table2}
 \end{table}
 \item So, the probability that new product is introduced by the second group can be given using \textbf{Baye's Theorem} as:-
+\begin{multline}
+  \implies  \text{Pr}(Y=0|X=1)
+    \\
+   = \frac{\text{Pr}(X=1|Y=0)\text{Pr}(Y=0)}{ \sum_{i=0}^{1}\text{Pr}(X=1|Y=i)\text{Pr}(Y=i)}
+    \end{multline}
 \begin{align}
-    \text{Pr}(Y=0|X=1) &= \frac{\text{Pr}(X=1|Y=0)\text{Pr}(Y=0)}{ \sum_{i=0}^{1}\text{Pr}(X=1|Y=i)\text{Pr}(Y=i)}
+ \implies  \text{Pr}(Y=0|X=1)  &= \frac{0.3\times 0.4}{0.3\times0.4+0.7 \times 0.6 }
     \\
-    &= \frac{0.3\times 0.4}{0.3\times0.4+0.7 \times 0.6 }
-    \\
-    &= \frac{0.12}{0.54} =\frac{2}{9}
-   \end{align}
-   
-   \begin{align}
+ \implies  \text{Pr}(Y=0|X=1) &= \frac{0.12}{0.54} =\frac{2}{9} 
+\end{align}
+\begin{align}
    \boxed{\therefore \text{Pr}(Y=0|X=1)= \frac{2}{9}}
 \end{align}
 \end{itemize}
